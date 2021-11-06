@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="773.0" styleClass="pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.numdio.MainController">
+    <children>
+        <Pane layoutX="208.0" prefHeight="533.0" prefWidth="565.0" styleClass="list-view-background" stylesheets="@application.css">
+            <children>
+                <Label fx:id="labelFileDestination" layoutX="5.0" layoutY="507.0" prefHeight="24.0" prefWidth="561.0" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ListView fx:id="fileView" layoutX="5.0" layoutY="3.0" prefHeight="487.0" prefWidth="562.0" stylesheets="@application.css" />
+            </children>
+        </Pane>
+        <Button fx:id="btnRemoveNumbers" alignment="CENTER" layoutX="6.0" layoutY="95.0" mnemonicParsing="false" onAction="#removeNumbers" prefHeight="32.0" prefWidth="193.0" styleClass="btn-style" stylesheets="@application.css" text="Remove Numbers" />
+        <Button fx:id="btnNumberFiles" alignment="CENTER" layoutX="6.0" layoutY="56.0" mnemonicParsing="false" onAction="#numberFiles" prefHeight="32.0" prefWidth="193.0" styleClass="btn-style" stylesheets="@application.css" text="Number Files" />
+        <Button fx:id="btnChooseFiles" alignment="CENTER" layoutX="6.0" layoutY="157.0" mnemonicParsing="false" onAction="#chooseFiles" prefHeight="32.0" prefWidth="193.0" styleClass="btn-style" stylesheets="@application.css" text="Choose Files" />
+        <Button fx:id="btnClearFiles" alignment="CENTER" layoutX="6.0" layoutY="195.0" mnemonicParsing="false" onAction="#clearFiles" prefHeight="32.0" prefWidth="193.0" styleClass="btn-style" stylesheets="@application.css" text="Clear Files" />
+        <TextField fx:id="txtNumberInput" layoutX="151.0" layoutY="14.0" prefHeight="11.0" prefWidth="48.0" text="1" />
+        <Label fx:id="labelFileDestination1" layoutX="14.0" layoutY="15.0" prefHeight="24.0" prefWidth="127.0" text="Number starting at:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="471.0" prefHeight="57.0" prefWidth="139.0" styleClass="title-label" stylesheets="@application.css" text="Num-dio" />
+        <Label layoutX="21.0" layoutY="511.0" prefHeight="17.0" prefWidth="113.0" styleClass="title-rights" stylesheets="@application.css" text="All © Rights Reserved " />
+    </children>
+</Pane>
