@@ -31,5 +31,6 @@
         </Label>
         <Label layoutX="14.0" layoutY="471.0" prefHeight="57.0" prefWidth="139.0" styleClass="title-label" stylesheets="@application.css" text="Num-dio" />
         <Label layoutX="21.0" layoutY="511.0" prefHeight="17.0" prefWidth="113.0" styleClass="title-rights" stylesheets="@application.css" text="All © Rights Reserved " />
+      <Button fx:id="btnCloseWindow" alignment="CENTER" layoutX="6.0" layoutY="275.0" mnemonicParsing="false" onAction="#removeNames" prefHeight="32.0" prefWidth="193.0" styleClass="btn-style" stylesheets="@application.css" text="Remove Names" />
     </children>
 </Pane>

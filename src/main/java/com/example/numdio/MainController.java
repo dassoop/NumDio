@@ -160,6 +160,14 @@ public class MainController implements Initializable
         fileView.getItems().setAll(files);
     }
 
+    public void removeNames(ActionEvent event)
+    {
+        if(fileView.getItems().size() <= 0) return;
+        File[] files = renameService.convertList(fileView.getItems());
+        files = renameService.removeNames(files, labelFileDestination.getText());
+        fileView.getItems().setAll(files);
+    }
+
     public void closeWindow(ActionEvent event)
     {
         Stage stage = (Stage) btnCloseWindow.getScene().getWindow();
