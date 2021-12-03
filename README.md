@@ -1,7 +1,7 @@
 # NumDio
 
 ## Info
-Program to number files consequecutivly. 
+Cross platform stand-alone app to number file names sequentially.
 	
 ## Tech
 Project is created with:
